@@ -1,0 +1,27 @@
+<!-- src/main/resources/templates/register-user.html -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+
+<h2>Home</h2>
+
+<form th:action="@{/login}" method="get">
+    <br>
+    <button type="submit">Log in</button>
+    <br>
+</form>
+<form th:action="@{/register}" method="get">
+    <br>
+    <button type="submit">Register</button>
+    <br>
+</form>
+</body>
+</html>
