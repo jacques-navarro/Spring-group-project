@@ -12,7 +12,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String userName;
 
     private String birthdate;
 
@@ -23,12 +23,12 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     List<LoginPage> loginPage;
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getBirthdate() {

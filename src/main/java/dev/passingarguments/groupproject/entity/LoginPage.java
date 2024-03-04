@@ -69,7 +69,7 @@ public class LoginPage {
                 ", email='" + email + '\'' +
                 ", loginDate=" + loginDate +
                 ", loginTime=" + loginTime +
-                ", registration=" + user.getName() +
+                ", registration=" + user.getUserName() +
                 '}';
     }
 }

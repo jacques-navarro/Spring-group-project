@@ -14,7 +14,13 @@ import java.util.Optional;
 @Controller
 public class RegistrationController {
 
-    private final UserInterface userInterface;
+    private
+    UserInterface userInterface;
+
+    public RegistrationController() {
+    }
+
+    ;
 
     @Autowired
     public RegistrationController(UserInterface userInterface) {
@@ -41,6 +47,7 @@ public class RegistrationController {
 
         if (o.isPresent()) {
             User user = o.get();
+
             if (user.getPassword().equals(password)) {
                 return "logged-in";
             }
@@ -66,7 +73,7 @@ public class RegistrationController {
                                Model model) {
 
         User user = new User();
-        user.setName(username);
+        user.setUserName(username);
         user.setBirthdate(birthday);
         user.setEmail(email);
         user.setPassword(password);
