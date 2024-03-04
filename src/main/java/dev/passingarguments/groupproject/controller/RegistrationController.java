@@ -67,19 +67,15 @@ public class RegistrationController {
 
     @GetMapping("/register-user")
     public String registerUser(@RequestParam("username") String username,
-                               @RequestParam("password") String birthday,
-                               @RequestParam("birthday") String email,
                                @RequestParam("password") String password,
                                Model model) {
 
         User user = new User();
         user.setUserName(username);
-        user.setBirthdate(birthday);
-        user.setEmail(email);
         user.setPassword(password);
 
         userInterface.save(user);
 
-        return "login";
+        return "log-user-in";
     }
 }
