@@ -20,7 +20,7 @@ public class LoginPage {
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private Registration registration;
+    private User user;
 
     public Long getId() {
         return id;
@@ -54,12 +54,12 @@ public class LoginPage {
         this.loginTime = loginTime;
     }
 
-    public Registration getRegistration() {
-        return registration;
+    public User getRegistration() {
+        return user;
     }
 
-    public void setRegistration(Registration registration) {
-        this.registration = registration;
+    public void setRegistration(User user) {
+        this.user = user;
     }
 
     @Override
@@ -69,7 +69,7 @@ public class LoginPage {
                 ", email='" + email + '\'' +
                 ", loginDate=" + loginDate +
                 ", loginTime=" + loginTime +
-                ", registration=" + registration.getName() +
+                ", registration=" + user.getName() +
                 '}';
     }
 }

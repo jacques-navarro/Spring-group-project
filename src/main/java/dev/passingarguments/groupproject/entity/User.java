@@ -6,7 +6,7 @@ import java.util.List;
 
 
 @Entity
-public class Registration {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
