@@ -54,11 +54,11 @@ public class LoginPage {
         this.loginTime = loginTime;
     }
 
-    public User getRegistration() {
+    public User getUser() {
         return user;
     }
 
-    public void setRegistration(User user) {
+    public void setUser(User user) {
         this.user = user;
     }
 
