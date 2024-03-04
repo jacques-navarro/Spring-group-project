@@ -65,7 +65,7 @@ public class RegistrationController {
         return "register-user";
     }
 
-    @GetMapping("/register-user")
+    @PostMapping("/create-user")
     public String registerUser(@RequestParam("username") String username,
                                @RequestParam("password") String password,
                                Model model) {
